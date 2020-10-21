@@ -4,6 +4,7 @@ import com.mazeltov.custompoxy.Benchmark;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
+import org.springframework.util.ClassUtils;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
@@ -12,7 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-public class BenchmarkAnnotationBeanPostProcessor implements BeanPostProcessor {
+public class BenchmarkAnnotationClassBeanPostProcessor implements BeanPostProcessor {
 
     private Map<String, Class> map = new HashMap<>();
 
@@ -28,15 +29,15 @@ public class BenchmarkAnnotationBeanPostProcessor implements BeanPostProcessor {
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
         Class beanClass = map.get(beanName);
-        if(beanClass != null){
-            return Proxy.newProxyInstance(beanClass.getClassLoader(), beanClass.getInterfaces(), new InvocationHandler() {
+        if (beanClass != null) {
+            return Proxy.newProxyInstance(beanClass.getClassLoader(), ClassUtils.getAllInterfacesForClass(beanClass), new InvocationHandler() {
                 @Override
                 public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
 
                     long time = System.nanoTime();
                     Object invoke = method.invoke(bean, args);
                     long afterTime = System.nanoTime();
-                    System.out.println("Method from "+beanClass.getName()+" execute for "+(afterTime-time));
+                    System.out.println("Method from " + beanClass.getName() + " execute for " + (afterTime - time));
                     return invoke;
                 }
             });

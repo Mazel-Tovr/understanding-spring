@@ -8,8 +8,8 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     <context:annotation-config />
     <context:component-scan base-package="com...."/>
     <bean class="com.mazeltov.beanpostprocess.InjectRandomIntAnnotationBeanPostProcessor" />
-    <bean class="com.mazeltov.beanpostprocess.BenchmarkAnnotationBeanPostProcessor" />
-    <bean class="com.mazeltov.listner.ApplicationContextReadyListener"/>
+    <bean class="com.mazeltov.beanpostprocess.BenchmarkAnnotationClassBeanPostProcessor" />
+    <bean class="com.mazeltov.listener.ApplicationContextReadyListener"/>
 
     <bean class="com.mazeltov.customannotation.Human" id="human">
         <property name="message" value="hello" />

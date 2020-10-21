@@ -1,4 +1,4 @@
-package com.mazeltov.listner;
+package com.mazeltov.listener;
 
 import com.mazeltov.postcontext.AfterReadyContext;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,12 @@ public class ApplicationContextReadyListener implements ApplicationListener<Cont
             BeanDefinition beanDefinition = factory.getBeanDefinition(name);
             String originalName = beanDefinition.getBeanClassName();
             try {
+                if (originalName == null) {
+                    //TODO Look here
+                    continue;//да да костыль как его решить https://youtu.be/BFEgLtFLdRI?t=1892
+                }
                 Class<?> originalClass = Class.forName(originalName);
+
                 Method[] methods = originalClass.getMethods();
                 for (Method method : methods) {
                     if (method.isAnnotationPresent(AfterReadyContext.class)) {

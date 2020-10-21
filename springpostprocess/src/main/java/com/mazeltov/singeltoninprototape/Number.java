@@ -1,5 +1,8 @@
 package com.mazeltov.singeltoninprototape;
 
+import org.springframework.stereotype.Component;
+
+
 public class Number {
 
     private int number;

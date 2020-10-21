@@ -1,17 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="497563f1-cb70-4d39-b624-c0f17bf251b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/singeltoninprototape/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/singeltoninprototape/Number.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/singeltoninprototape/Printer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+    <list default="true" id="497563f1-cb70-4d39-b624-c0f17bf251b5" name="Default Changelist" comment="project inited and wrote bpp / custom annotations / app context listener">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationMethodBeanPostProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mazeltov/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationClassBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mazeltov/custompoxy/SuperDuperBusinessLogicImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/custompoxy/SuperDuperBusinessLogicImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mazeltov/listner/ApplicationContextReadyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/listener/ApplicationContextReadyListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mazeltov/singeltoninprototape/Number.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/singeltoninprototape/Number.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/context.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/springpostprocess.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/mazeltov/custompoxy/SuperDuperBusinessLogicImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mazeltov/custompoxy/SuperDuperBusinessLogicImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +55,18 @@
     <property name="settings.editor.selected.configurable" value="reference.idesettings.debugger.capture" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Github\understanding-spring\springpostprocess\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mazeltov.beanpostprocess" />
+    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.mazeltov.custompoxy" />
       <recent name="com.mazeltov.test" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Github\understanding-spring\springpostprocess\src\main" />
-    </key>
   </component>
-  <component name="RunManager" selected="Application.Config">
+  <component name="RunManager" selected="Application.App">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mazeltov.App" />
       <module name="springpostprocess" />
@@ -94,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Config" />
         <item itemvalue="Application.App" />
+        <item itemvalue="Application.Config" />
       </list>
     </recent_temporary>
   </component>
@@ -141,46 +142,46 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="605" y="140" width="550" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603283886747" />
-    <state x="465" y="51" key="CommitChangelistDialog2" timestamp="1603290898042">
+    <state x="465" y="51" key="CommitChangelistDialog2" timestamp="1603310556352">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="465" y="51" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1603290898042" />
+    <state x="465" y="51" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1603310556352" />
     <state x="579" y="186" key="FileChooserDialogImpl" timestamp="1603222632287">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="579" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603222632287" />
-    <state width="1557" height="210" key="GridCell.Tab.0.bottom" timestamp="1603290938289">
+    <state width="1557" height="350" key="GridCell.Tab.0.bottom" timestamp="1603310572238">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="210" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603290938289" />
-    <state width="1557" height="210" key="GridCell.Tab.0.center" timestamp="1603290938289">
+    <state width="1557" height="350" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603310572238" />
+    <state width="1557" height="350" key="GridCell.Tab.0.center" timestamp="1603310572238">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="210" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603290938289" />
-    <state width="1557" height="210" key="GridCell.Tab.0.left" timestamp="1603290938288">
+    <state width="1557" height="350" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603310572238" />
+    <state width="1557" height="350" key="GridCell.Tab.0.left" timestamp="1603310572238">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="210" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603290938288" />
-    <state width="1557" height="210" key="GridCell.Tab.0.right" timestamp="1603290938289">
+    <state width="1557" height="350" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603310572238" />
+    <state width="1557" height="350" key="GridCell.Tab.0.right" timestamp="1603310572238">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="210" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603290938289" />
-    <state width="1557" height="303" key="GridCell.Tab.1.bottom" timestamp="1603222633880">
+    <state width="1557" height="350" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603310572238" />
+    <state width="1557" height="350" key="GridCell.Tab.1.bottom" timestamp="1603310572239">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603222633880" />
-    <state width="1557" height="303" key="GridCell.Tab.1.center" timestamp="1603222633879">
+    <state width="1557" height="350" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603310572239" />
+    <state width="1557" height="350" key="GridCell.Tab.1.center" timestamp="1603310572239">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1603222633879" />
-    <state width="1557" height="303" key="GridCell.Tab.1.left" timestamp="1603222633879">
+    <state width="1557" height="350" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1603310572239" />
+    <state width="1557" height="350" key="GridCell.Tab.1.left" timestamp="1603310572238">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1603222633879" />
-    <state width="1557" height="303" key="GridCell.Tab.1.right" timestamp="1603222633879">
+    <state width="1557" height="350" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1603310572238" />
+    <state width="1557" height="350" key="GridCell.Tab.1.right" timestamp="1603310572239">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1603222633879" />
+    <state width="1557" height="350" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1603310572239" />
     <state x="330" y="86" key="Maven.ArtifactSearchDialog" timestamp="1603205501876">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -197,9 +198,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="496" y="28" width="607" height="804" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1603207513582" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1603220455841">
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1603306703579">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603220455841" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603306703579" />
   </component>
 </project>

@@ -2,7 +2,7 @@ package com.mazeltov.custompoxy;
 
 import com.mazeltov.postcontext.AfterReadyContext;
 
-@Benchmark
+//@Benchmark
 public class SuperDuperBusinessLogicImpl implements SuperDuperBusinessLogic {
 
     @AfterReadyContext
@@ -11,7 +11,7 @@ public class SuperDuperBusinessLogicImpl implements SuperDuperBusinessLogic {
         System.out.println("Context is ready");
     }
 
-
+    @Benchmark
     @Override
     public void doBusinessLogic() {
         System.out.println("super-duper-logic");
