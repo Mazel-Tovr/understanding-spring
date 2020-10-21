@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="497563f1-cb70-4d39-b624-c0f17bf251b5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/InjectRandomIntAnnotationBeanPostProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/customannotation/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/customannotation/InjectRandomInt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/customannotation/Speakable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/custompoxy/Benchmark.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/custompoxy/SuperDuperBusinessLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/custompoxy/SuperDuperBusinessLogicImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/listner/ApplicationContextReadyListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/postcontext/AfterReadyContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/singeltoninprototape/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/singeltoninprototape/Number.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/singeltoninprototape/Printer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/springpostprocess.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mazeltov/custompoxy/SuperDuperBusinessLogicImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mazeltov/custompoxy/SuperDuperBusinessLogicImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/context.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -51,6 +50,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -65,7 +65,7 @@
       <recent name="C:\Github\understanding-spring\springpostprocess\src\main" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Config">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.mazeltov.App" />
       <module name="springpostprocess" />
@@ -79,8 +79,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Config" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.mazeltov.singeltoninprototape.Config" />
+      <module name="springpostprocess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.mazeltov.singeltoninprototape.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Config" />
         <item itemvalue="Application.App" />
       </list>
     </recent_temporary>
@@ -108,53 +122,65 @@
       <option name="presentableId" value="Default" />
       <updated>1603198236128</updated>
     </task>
+    <task id="LOCAL-00001" summary="project inited and wrote bpp / custom annotations / app context listener">
+      <created>1603222247029</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603222247029</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="project inited and wrote bpp / custom annotations / app context listener" />
+    <option name="LAST_COMMIT_MESSAGE" value="project inited and wrote bpp / custom annotations / app context listener" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="605" y="140" width="550" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1603219833019">
+    <state x="605" y="140" width="550" height="579" key="#com.intellij.ide.util.MemberChooser" timestamp="1603283886747">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="605" y="140" width="550" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603219833019" />
-    <state x="465" y="51" key="CommitChangelistDialog2" timestamp="1603222245527">
+    <state x="605" y="140" width="550" height="579" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1603283886747" />
+    <state x="465" y="51" key="CommitChangelistDialog2" timestamp="1603290898042">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="465" y="51" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1603222245527" />
-    <state x="579" y="186" key="FileChooserDialogImpl" timestamp="1603207503730">
+    <state x="465" y="51" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1603290898042" />
+    <state x="579" y="186" key="FileChooserDialogImpl" timestamp="1603222632287">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="579" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603207503730" />
-    <state width="1557" height="324" key="GridCell.Tab.0.bottom" timestamp="1603222071854">
+    <state x="579" y="186" key="FileChooserDialogImpl/0.0.1600.860@0.0.1600.860" timestamp="1603222632287" />
+    <state width="1557" height="210" key="GridCell.Tab.0.bottom" timestamp="1603290938289">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="324" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603222071854" />
-    <state width="1557" height="324" key="GridCell.Tab.0.center" timestamp="1603222071854">
+    <state width="1557" height="210" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603290938289" />
+    <state width="1557" height="210" key="GridCell.Tab.0.center" timestamp="1603290938289">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="324" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603222071854" />
-    <state width="1557" height="324" key="GridCell.Tab.0.left" timestamp="1603222071854">
+    <state width="1557" height="210" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1603290938289" />
+    <state width="1557" height="210" key="GridCell.Tab.0.left" timestamp="1603290938288">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="324" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603222071854" />
-    <state width="1557" height="324" key="GridCell.Tab.0.right" timestamp="1603222071854">
+    <state width="1557" height="210" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1603290938288" />
+    <state width="1557" height="210" key="GridCell.Tab.0.right" timestamp="1603290938289">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="324" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603222071854" />
-    <state width="1557" height="303" key="GridCell.Tab.1.bottom" timestamp="1603218335957">
+    <state width="1557" height="210" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1603290938289" />
+    <state width="1557" height="303" key="GridCell.Tab.1.bottom" timestamp="1603222633880">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603218335957" />
-    <state width="1557" height="303" key="GridCell.Tab.1.center" timestamp="1603218335957">
+    <state width="1557" height="303" key="GridCell.Tab.1.bottom/0.0.1600.860@0.0.1600.860" timestamp="1603222633880" />
+    <state width="1557" height="303" key="GridCell.Tab.1.center" timestamp="1603222633879">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1603218335957" />
-    <state width="1557" height="303" key="GridCell.Tab.1.left" timestamp="1603218335957">
+    <state width="1557" height="303" key="GridCell.Tab.1.center/0.0.1600.860@0.0.1600.860" timestamp="1603222633879" />
+    <state width="1557" height="303" key="GridCell.Tab.1.left" timestamp="1603222633879">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1603218335957" />
-    <state width="1557" height="303" key="GridCell.Tab.1.right" timestamp="1603218335957">
+    <state width="1557" height="303" key="GridCell.Tab.1.left/0.0.1600.860@0.0.1600.860" timestamp="1603222633879" />
+    <state width="1557" height="303" key="GridCell.Tab.1.right" timestamp="1603222633879">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="303" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1603218335957" />
+    <state width="1557" height="303" key="GridCell.Tab.1.right/0.0.1600.860@0.0.1600.860" timestamp="1603222633879" />
     <state x="330" y="86" key="Maven.ArtifactSearchDialog" timestamp="1603205501876">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -163,6 +189,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="280" y="5" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1603212890516" />
+    <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1603277567814">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="255" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1603277567814" />
     <state x="496" y="28" width="607" height="804" key="find.popup" timestamp="1603207513582">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -171,16 +201,5 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1603220455841" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/mazeltov/beanpostprocess/BenchmarkAnnotationBeanPostProcessor.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
